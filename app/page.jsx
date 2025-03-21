@@ -5,7 +5,7 @@ import data from "../data.json";
 import { ProfileOrganizations } from "./components/orgs";
 import { RecentActivity } from "./components/recent-activity";
 import { getUser } from "./data";
-import { OpenAIStatsWidget } from "./components/openai-stats-widget";
+// import { OpenAIStatsWidget } from "./components/openai-stats-widget";
 
 const navigation = [
   { name: "Projects", href: "/projects" },

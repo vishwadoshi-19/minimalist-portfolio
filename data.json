@@ -7,6 +7,6 @@
   "linkedin": "https://www.linkedin.com/in/vishwadoshi19/",
   "projects": {
     "blacklist": ["dijkstra-visualiser"],
-    "heroNames": ["video-call-app"]
+    "heroNames": []
   }
 }

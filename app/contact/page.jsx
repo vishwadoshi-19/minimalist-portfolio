@@ -50,7 +50,7 @@ export default async function Contacts(props) {
           href: s.url,
           label: s.provider,
           // Extract last aprt of the url.
-          handle: s.url.split("/").pop(),
+          handle: "vishwadoshi19",
         });
         break;
       case "twitter":

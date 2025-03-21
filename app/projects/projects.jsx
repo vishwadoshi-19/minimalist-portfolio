@@ -1,6 +1,6 @@
 import { Card } from "../components/card";
 // import { UserTimeline } from "../components/timeline";
-import { Article } from "./article";
+import { Article } from "./article.jsx";
 import data from "../../data.json";
 import chunk from "lodash/chunk";
 import { getRepos, getPinnedRepos, getVercelProjects } from "../data";
