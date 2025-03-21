@@ -1,0 +1,12 @@
+{
+  "description": "My hobby projects, most of them are Next.js apps deployed to Vercel.",
+  "githubUsername": "vishwadoshi-19",
+  "avatarUrl": "",
+  "displayName": "Vishwa Doshi",
+  "email": "vishwadoshi19@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/vishwadoshi19/",
+  "projects": {
+    "blacklist": ["dijkstra-visualiser"],
+    "heroNames": ["video-call-app"]
+  }
+}
