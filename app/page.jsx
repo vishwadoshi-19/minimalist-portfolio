@@ -10,6 +10,10 @@ import { getUser } from "./data";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/18R9TXy_ZpgoTQN1pSIQdNaKmSHOTX73b/view?usp=sharing",
+  },
 ];
 
 export default async function Home(props) {
@@ -37,7 +41,8 @@ const UserText = async ({ promise }) => {
 
   return (
     <p>
-      Hi, my name is {user.name || data.displayName}
+      Hi, my name is{" "}
+      <span className="text-amber-100">{user.name || data.displayName}</span>
       {". "}
       {user.bio}
     </p>
@@ -75,7 +80,11 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
                 item.href +
                 (customUsername ? `?customUsername=${customUsername}` : "")
               }
-              className="text-lg duration-500 text-zinc-500 hover:text-zinc-300"
+              className="duration-500 text-zinc-500 hover:text-zinc-300 text-2xl"
+              {...(item.name === "Resume" && {
+                target: "_blank",
+                rel: "noopener noreferrer",
+              })}
             >
               {item.name}
             </Link>
@@ -99,8 +108,8 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
             fallback={<div className="w-full h-px min-h-28">Loading...</div>}
           >
             <div className="w-full h-px min-h-28 text-3xl">
-              <UserText promise={promise} />
-              <ProfileOrganizations username={username} />
+              <UserText className="text-3xl text-amber-100" promise={promise} />
+              <ProfileOrganizations className="text-2xl" username={username} />
               <RecentActivity username={username} />
             </div>
           </Suspense>

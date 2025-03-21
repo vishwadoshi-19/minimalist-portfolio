@@ -10,7 +10,16 @@ export const ProfileOrganizations = async ({ username }) => {
 
   return (
     <p className="text-2xl">
-      I'm building stuff at <Link href="https://zense.in/">Zense.in</Link>
+      I'm building stuff at{" "}
+      <span className="text-blue-100">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://zense.in/"
+        >
+          Zense.in
+        </Link>
+      </span>
       {organizations?.length > 0 ? (
         <>
           {" "}
