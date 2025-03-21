@@ -12,7 +12,7 @@ const navigation = [
   { name: "Contact", href: "/contact" },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/18R9TXy_ZpgoTQN1pSIQdNaKmSHOTX73b/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1YFH8nxqk8n22__Q0z48NWjEO93QVS8Z4/view?usp=sharing",
   },
 ];
 
